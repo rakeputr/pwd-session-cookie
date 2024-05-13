@@ -55,6 +55,10 @@ if (isset($_GET['pesan'])) {
           <label for="input-password" class="form-label">password</label>
           <input type="password" name="password" id="input-password" class="form-control">
         </div>
+        <div class="mb-3">
+          <input type="checkbox" name="remember" id="remember">
+          <label for="remember" class="form-label">Remember me</label>
+        </div>
         <button type="submit" class="btn btn-primary">Login</button>
         <p class="pt-3">Saya belum memiliki akun? klik <a href="register.php">register</a></p>
       </form>

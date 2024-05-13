@@ -9,5 +9,5 @@ if (isLogged()) {
   session_destroy();
 }
 
-redirect("login.php?logout");
+redirect("login.php?pesan=logout");
 ?>
