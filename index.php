@@ -46,8 +46,9 @@ include (__DIR__ . "/components/header.php");
       <!-- <h2>Tugas Crud PHP & MySQL</h2> -->
     </header>
 
-    <div class="mx-auto">
-      <a class="btn shadow-lg text-white" style="background-color: #F3635A" href="create.php">Insert Data</a>
+    <div class="mx-auto d-flex justify-content-between">
+      <a class="btn shadow-lg text-white ml-auto" style="background-color: #F3635A" href="create.php">Insert Data</a>
+      <a class="btn shadow-lg text-white mr-auto" style="background-color: #F3635A" href="logout.php">Logout</a>
     </div>
 
     <div class="mx-auto">
@@ -109,6 +110,6 @@ include (__DIR__ . "/components/header.php");
     </div>
   </section>
 </div>
-<a href="logout.php">logout</a>
+
 
 <?php include (__DIR__ . "/components/footer.php"); ?>
