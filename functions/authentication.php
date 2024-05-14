@@ -68,7 +68,7 @@ function register(string $username, string $password, string $confirmPassword): 
 
   $connection = getConnection();
 
-  $connection->query("INSERT INTO user VALUES (null, $username, $password)");
+  $connection->query("INSERT INTO user VALUES (null, '$username', '$password')");
 
   return ($connection->affected_rows) ? true : false;
 }
