@@ -37,7 +37,7 @@ CREATE TABLE `obat` (
 
 LOCK TABLES `obat` WRITE;
 /*!40000 ALTER TABLE `obat` DISABLE KEYS */;
-INSERT INTO `obat` VALUES (444444,'amoxcilin',3,'2024-05-30'),(3333333,'444444x',4,'2024-05-23');
+INSERT INTO `obat` VALUES (27270,'asamefenamat',55,'2024-05-25'),(44466,'amoxcilinn',33,'2024-05-30'),(56777,'paracetamol',10,'2024-05-31');
 /*!40000 ALTER TABLE `obat` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,7 +54,7 @@ CREATE TABLE `user` (
   `password` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,4 +76,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-14 19:04:46
+-- Dump completed on 2024-05-14 21:11:51

@@ -14,9 +14,14 @@
     .card {
       margin-top: 10px;
     }
+
+    body {
+      background-color: #FADFDB;
+      font-family: "Times New Roman", Times, serif;
+    }
   </style>
 
   <title><?= $title ?? "title"; ?></title>
 </head>
 
-<body style="background-color: #FADFDB">
+<body>

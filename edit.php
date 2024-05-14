@@ -19,8 +19,8 @@ if (isset($_GET['op'])) {
 }
 
 
-$kode = $_GET['kode'];
-$edit = $connection->query("select * from obat where kode_obat = '$kode'");
+$kodeedit = $_GET['kode'];
+$edit = $connection->query("select * from obat where kode_obat = '$kodeedit'");
 $row = $edit->fetch_object();
 $kode = $row->kode_obat;
 $nama = $row->nama_obat;
@@ -37,7 +37,7 @@ if (isset($_POST['simpan'])) { //untuk create
   $tgl_exp = $_POST['tgl_exp'];
 
   if ($kode && $nama && $stok && $tgl_exp) {
-    $update = $connection->query("update obat set kode_obat = '$kode',nama_obat='$nama',stok = '$stok',tgl_exp='$tgl_exp' where kode_obat = '$kode'");
+    $update = $connection->query("update obat set kode_obat = '$kode',nama_obat='$nama',stok = '$stok',tgl_exp='$tgl_exp' where kode_obat = '$kodeedit'");
     if ($update) {
       $sukses = "Data berhasil diupdate";
       header("location: index.php?status=success&message=" . $sukses);//5 : detik

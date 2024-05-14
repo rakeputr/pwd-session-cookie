@@ -46,7 +46,7 @@ if (isset($_GET['pesan'])) {
 ?>
 
 <section class="min-vh-100 vw-100 d-flex justify-content-center align-items-center">
-  <div class="card" style="max-width: 300px">
+  <div class="card shadow-lg" style="max-width: 300px">
     <h5 class="card-header text-white" style="background-color: #F79B95">Login</h5>
     <div class="card-body">
       <form method="post">
@@ -62,8 +62,8 @@ if (isset($_GET['pesan'])) {
           <input type="checkbox" name="remember" id="remember">
           <label for="remember" class="form-label">Remember me</label>
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-        <p class="pt-3" style="font-size: 12px;">Saya belum memiliki akun? klik <a href="register.php">register</a></p>
+        <button type="submit" class="btn text-white" style="background-color: #F3635A">Login</button>
+        <p class="pt-3" style="font-size: 12px;">Belum memiliki akun? klik <a href="register.php">register</a></p>
       </form>
     </div>
   </div>
