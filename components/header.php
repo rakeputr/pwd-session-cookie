@@ -19,4 +19,4 @@
   <title><?= $title ?? "title"; ?></title>
 </head>
 
-<body>
+<body style="background-color: #FADFDB">
