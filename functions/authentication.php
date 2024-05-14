@@ -60,3 +60,15 @@ function logout(): void
   session_destroy();
 }
 
+function register(string $username, string $password, string $confirmPassword): bool
+{
+  if ($password !== $confirmPassword) {
+    return false;
+  }
+
+  $connection = getConnection();
+
+  $connection->query("INSERT INTO user VALUES (null, '$username', '$password')");
+
+  return ($connection->affected_rows) ? true : false;
+}
