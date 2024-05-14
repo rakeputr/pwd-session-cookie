@@ -2,12 +2,12 @@
 
 session_start();
 
-require_once (__DIR__ . "/functions/route.php");
-require_once (__DIR__ . "/functions/authentication.php");
+require_once(__DIR__ . "/functions/route.php");
+require_once(__DIR__ . "/functions/authentication.php");
 
 if (isLogged()) {
-  session_destroy();
+  logout();
 }
 
 redirect("login.php?pesan=logout");
-?>
+
